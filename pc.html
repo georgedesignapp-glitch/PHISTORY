@@ -38,6 +38,13 @@
     <li>スマホの「設定 › PC とつなぐ」で「受け取る」を押すと、ブックに入ります。受け取ったものは PC の画面から消えます（元のファイルはそのまま）。30 日受け取られなければ片付けます。</li>
   </ol>
 
+  <h2>スマホから PC で変換する</h2>
+  <ol>
+    <li>スマホで読めない動画や、スマホでは時間のかかる動画は、PC に送って変換できます。スマホの取り込みの CLIP 画面で「PC で変換」を押すか、IMPORT の「PC で変換できる動画」から一覧を開いて「PC で変換」を押します。</li>
+    <li>PC は、送ったスマホの取り込みの設定のまま変換します（PC で選んだ変換のしかたは使いません）。区間がまだ決まっていない動画は、PC の画面で選びます。</li>
+    <li>変換が終わると、送ったスマホが自動で受け取り、同じ取り込みの記録に戻ります。</li>
+  </ol>
+
   <h2>安全のこと</h2>
   <div class="card">
     <p>写真・動画と目録は、スマホで1件ずつ暗号化されたまま届きます。暗号を解く鍵は PC に送らないので、PC では中身を開けません。</p>
@@ -51,7 +58,36 @@
   <hr id="en">
 
   <h2>PHISTORY Book PC</h2>
-  <p>A small Windows app that receives PHISTORY Book's backup over your home Wi-Fi into a folder on your PC. Everything arrives encrypted on the phone; the PC never gets the key. Pair the phone with the six-digit code the app shows; only paired phones on the local network are accepted. Allow it on <em>private</em> networks when Windows Firewall asks.</p>
+  <p>A small Windows app for PHISTORY Book. It receives the phone's backup over your home Wi-Fi into a folder on your PC, and it converts photos and videos on your PC so the phone can take them into its book.</p>
+
+  <h3>Download</h3>
+  <p><a href="download/PHISTORY-Book-PC.exe"><strong>PHISTORY-Book-PC.exe</strong></a> (Windows 10 / 11, about 12 MB, v1.3.0). No installation is needed: put it anywhere and double-click it. Closing the window keeps it running in the system tray (bottom right of the screen). Turn on “Start with Windows” (PC の起動時に立ち上げる) in its settings to start it with your PC. The SHA-256 is the same as in the Japanese section above.</p>
+
+  <h3>Getting started</h3>
+  <ol>
+    <li>Start <strong>PHISTORY-Book-PC.exe</strong>. Its screen has three parts: <em>Import</em> (取り込み), <em>Backup</em> (バックアップ) and <em>Link &amp; settings</em> (つなぐ・設定). The six-digit pairing code is under Link &amp; settings.</li>
+    <li>When Windows Firewall asks, allow it on <strong>private networks</strong>. If your home Wi-Fi is set to “Public”, change it to “Private” in Windows settings.</li>
+    <li>On the phone, open Settings › PC (設定 › PC とつなぐ), choose this PC and enter the six-digit code. The phone and the PC must be on the same Wi-Fi.</li>
+  </ol>
+
+  <h3>Backup to the PC</h3>
+  <p>Choose the PC as the LOCAL destination on the phone (Backup and restore › LOCAL › Destination › PC). “Back up now” (今すぐバックアップ) and AUTO (a daily time window) then save to the PC's folder; after the first time only what changed is sent. AUTO runs only while the PC is on and on the same Wi-Fi. Copy the folder to an SD card or USB drive and the phone can restore from it with “Restore from folder” (フォルダから復元).</p>
+
+  <h3>Import from the PC</h3>
+  <ol>
+    <li>Under <em>Import</em>, choose how to convert — the same choices as the app's IMPORT: space saving, standard, quality or custom. The choice applies to what you add from then on; what is already in the box keeps the setting it came in with.</li>
+    <li>Pick photos and videos, or drop them on the screen (whole folders too). For a video, choose its tier — MOMENT (10 s), MEMORY (30 s) or STORY (60 s) — and its part, as in the app; many videos can be set at once from the start. Capture time, place and camera model are passed on from the original files.</li>
+    <li>On the phone, tap “Take” (受け取る) under Settings › PC. What the phone takes leaves the PC's box (the original files stay as they are). Anything not taken within 30 days is cleared.</li>
+  </ol>
+
+  <h3>Converting on the PC from the phone</h3>
+  <p>Videos the phone cannot read, or that are slow to convert on it, can be sent to the PC: tap “Convert on PC” (PC で変換) in the CLIP screen, or open “Videos the PC can convert” (PC で変換できる動画) in IMPORT. The PC converts them with the phone's own import setting, and the phone takes them back automatically into the same import record.</p>
+
+  <h3>Safety</h3>
+  <p>Backups arrive encrypted item by item on the phone; the key is never sent to the PC, so the PC cannot open them. All traffic stays inside your home Wi-Fi (nothing goes over the internet), and only paired phones are accepted.</p>
+
+  <h3>Windows warning</h3>
+  <p>The app is not code-signed yet, so Windows may show “Windows protected your PC” when you start it. Choose “More info” › “Run anyway”.</p>
 </main>
 </body>
 </html>
